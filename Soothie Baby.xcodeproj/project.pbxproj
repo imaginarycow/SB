@@ -8,22 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		B51056D31D873EE20094941C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51056D21D873EE20094941C /* AppDelegate.swift */; };
-		B51056D51D873EE20094941C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51056D41D873EE20094941C /* ViewController.swift */; };
+		B51056D51D873EE20094941C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51056D41D873EE20094941C /* MenuViewController.swift */; };
 		B51056D81D873EE20094941C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51056D61D873EE20094941C /* Main.storyboard */; };
 		B51056DB1D873EE20094941C /* Soothie_Baby.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B51056D91D873EE20094941C /* Soothie_Baby.xcdatamodeld */; };
 		B51056DD1D873EE20094941C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51056DC1D873EE20094941C /* Assets.xcassets */; };
 		B51056E01D873EE20094941C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51056DE1D873EE20094941C /* LaunchScreen.storyboard */; };
+		B51056EB1D8751CE0094941C /* SoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51056EA1D8751CE0094941C /* SoundsViewController.swift */; };
+		B51056ED1D8751E80094941C /* NewSoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51056EC1D8751E80094941C /* NewSoundViewController.swift */; };
+		B51056EF1D8751F90094941C /* LoopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51056EE1D8751F90094941C /* LoopViewController.swift */; };
+		B51056F11D9381EA0094941C /* Global Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51056F01D9381EA0094941C /* Global Data.swift */; };
+		B51056F31D93826A0094941C /* FirebaseAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51056F21D93826A0094941C /* FirebaseAuth.swift */; };
+		B51056F51D9392420094941C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B51056F41D9392420094941C /* GoogleService-Info.plist */; };
+		C9AF407629466F6EEAA499CE /* Pods_Soothie_Baby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D325279EC12F36D6B197E5D3 /* Pods_Soothie_Baby.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02134914E9F7D531419EFAC4 /* Pods-Soothie Baby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soothie Baby.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Soothie Baby/Pods-Soothie Baby.debug.xcconfig"; sourceTree = "<group>"; };
+		0AA01505711CCB312829F757 /* Pods-Soothie Baby.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soothie Baby.release.xcconfig"; path = "Pods/Target Support Files/Pods-Soothie Baby/Pods-Soothie Baby.release.xcconfig"; sourceTree = "<group>"; };
 		B51056CF1D873EE20094941C /* Soothie Baby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Soothie Baby.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B51056D21D873EE20094941C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B51056D41D873EE20094941C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B51056D41D873EE20094941C /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		B51056D71D873EE20094941C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B51056DA1D873EE20094941C /* Soothie_Baby.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Soothie_Baby.xcdatamodel; sourceTree = "<group>"; };
 		B51056DC1D873EE20094941C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B51056DF1D873EE20094941C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B51056E11D873EE20094941C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B51056E91D8740920094941C /* Milonga-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Milonga-Regular.ttf"; sourceTree = "<group>"; };
+		B51056EA1D8751CE0094941C /* SoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundsViewController.swift; sourceTree = "<group>"; };
+		B51056EC1D8751E80094941C /* NewSoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSoundViewController.swift; sourceTree = "<group>"; };
+		B51056EE1D8751F90094941C /* LoopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoopViewController.swift; sourceTree = "<group>"; };
+		B51056F01D9381EA0094941C /* Global Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Global Data.swift"; sourceTree = "<group>"; };
+		B51056F21D93826A0094941C /* FirebaseAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseAuth.swift; sourceTree = "<group>"; };
+		B51056F41D9392420094941C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D325279EC12F36D6B197E5D3 /* Pods_Soothie_Baby.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Soothie_Baby.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +48,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9AF407629466F6EEAA499CE /* Pods_Soothie_Baby.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2FD8A8C26276109E83C73FC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D325279EC12F36D6B197E5D3 /* Pods_Soothie_Baby.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74122554E9EB303FF9C6178E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02134914E9F7D531419EFAC4 /* Pods-Soothie Baby.debug.xcconfig */,
+				0AA01505711CCB312829F757 /* Pods-Soothie Baby.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B51056C61D873EE10094941C = {
 			isa = PBXGroup;
 			children = (
 				B51056D11D873EE20094941C /* Soothie Baby */,
 				B51056D01D873EE20094941C /* Products */,
+				74122554E9EB303FF9C6178E /* Pods */,
+				2FD8A8C26276109E83C73FC1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +93,38 @@
 		B51056D11D873EE20094941C /* Soothie Baby */ = {
 			isa = PBXGroup;
 			children = (
+				B51056E71D873F280094941C /* Controllers */,
+				B51056E81D873F320094941C /* Support Files */,
 				B51056D21D873EE20094941C /* AppDelegate.swift */,
-				B51056D41D873EE20094941C /* ViewController.swift */,
 				B51056D61D873EE20094941C /* Main.storyboard */,
 				B51056DC1D873EE20094941C /* Assets.xcassets */,
 				B51056DE1D873EE20094941C /* LaunchScreen.storyboard */,
 				B51056E11D873EE20094941C /* Info.plist */,
+				B51056F41D9392420094941C /* GoogleService-Info.plist */,
 				B51056D91D873EE20094941C /* Soothie_Baby.xcdatamodeld */,
+				B51056E91D8740920094941C /* Milonga-Regular.ttf */,
 			);
 			path = "Soothie Baby";
+			sourceTree = "<group>";
+		};
+		B51056E71D873F280094941C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B51056D41D873EE20094941C /* MenuViewController.swift */,
+				B51056EA1D8751CE0094941C /* SoundsViewController.swift */,
+				B51056EC1D8751E80094941C /* NewSoundViewController.swift */,
+				B51056EE1D8751F90094941C /* LoopViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B51056E81D873F320094941C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B51056F01D9381EA0094941C /* Global Data.swift */,
+				B51056F21D93826A0094941C /* FirebaseAuth.swift */,
+			);
+			name = "Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +134,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B51056E41D873EE20094941C /* Build configuration list for PBXNativeTarget "Soothie Baby" */;
 			buildPhases = (
+				7B4D8677204164D1597499D5 /* Check Pods Manifest.lock */,
 				B51056CB1D873EE20094941C /* Sources */,
 				B51056CC1D873EE20094941C /* Frameworks */,
 				B51056CD1D873EE20094941C /* Resources */,
+				FD87F615125B27564B6AF57E /* Embed Pods Frameworks */,
+				362D7535138005B478468E8B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -99,6 +162,7 @@
 				TargetAttributes = {
 					B51056CE1D873EE20094941C = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = VHQ88CT5TL;
 					};
 				};
 			};
@@ -126,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B51056E01D873EE20094941C /* LaunchScreen.storyboard in Resources */,
+				B51056F51D9392420094941C /* GoogleService-Info.plist in Resources */,
 				B51056DD1D873EE20094941C /* Assets.xcassets in Resources */,
 				B51056D81D873EE20094941C /* Main.storyboard in Resources */,
 			);
@@ -133,14 +198,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		362D7535138005B478468E8B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Soothie Baby/Pods-Soothie Baby-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B4D8677204164D1597499D5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD87F615125B27564B6AF57E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Soothie Baby/Pods-Soothie Baby-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B51056CB1D873EE20094941C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B51056D51D873EE20094941C /* ViewController.swift in Sources */,
+				B51056F31D93826A0094941C /* FirebaseAuth.swift in Sources */,
+				B51056EF1D8751F90094941C /* LoopViewController.swift in Sources */,
+				B51056EB1D8751CE0094941C /* SoundsViewController.swift in Sources */,
+				B51056D51D873EE20094941C /* MenuViewController.swift in Sources */,
+				B51056F11D9381EA0094941C /* Global Data.swift in Sources */,
 				B51056D31D873EE20094941C /* AppDelegate.swift in Sources */,
 				B51056DB1D873EE20094941C /* Soothie_Baby.xcdatamodeld in Sources */,
+				B51056ED1D8751E80094941C /* NewSoundViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,9 +371,12 @@
 		};
 		B51056E51D873EE20094941C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02134914E9F7D531419EFAC4 /* Pods-Soothie Baby.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Soothie Baby/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.Beliro.Soothie-Baby";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -264,9 +385,12 @@
 		};
 		B51056E61D873EE20094941C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AA01505711CCB312829F757 /* Pods-Soothie Baby.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Soothie Baby/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.Beliro.Soothie-Baby";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,6 +416,7 @@
 				B51056E61D873EE20094941C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

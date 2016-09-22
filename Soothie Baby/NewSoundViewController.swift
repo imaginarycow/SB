@@ -6,4 +6,20 @@
 //  Copyright © 2016 Ramiro Beltran. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+
+class NewSoundViewController: UIViewController {
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+        
+        
+    }
+    
+    
+    
+}

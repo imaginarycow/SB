@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gwX-Rc-FFT">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Milonga-Regular.ttf">
+            <string>Milonga-Regular</string>
+            <string>Milonga-Regular</string>
+            <string>Milonga-Regular</string>
+            <string>Milonga-Regular</string>
+            <string>Milonga-Regular</string>
+            <string>Milonga-Regular</string>
+            <string>Milonga-Regular</string>
+            <string>Milonga-Regular</string>
+            <string>Milonga-Regular</string>
+            <string>Milonga-Regular</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Menu View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MenuViewController" customModule="Soothie_Baby" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +31,306 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soothie Baby" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZN6-8k-6d3">
+                                <rect key="frame" x="193" y="58" width="214" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="214" id="LGG-L2-yKi"/>
+                                    <constraint firstAttribute="height" constant="71" id="fDN-lC-Rv5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Milonga-Regular" family="Milonga" pointSize="33"/>
+                                <color key="textColor" red="0.17647058823529413" green="0.63921568627450975" blue="0.49411764705882355" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q3e-xO-2Hh">
+                                <rect key="frame" x="180" y="189" width="240" height="223"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w4K-Rv-eWF">
+                                        <rect key="frame" x="8" y="44" width="224" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="FjB-Rm-fPm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEn-QF-ewx">
+                                        <rect key="frame" x="105" y="82" width="30" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="1Mb-RE-eFU"/>
+                                            <constraint firstAttribute="height" constant="21" id="5K0-yr-0RH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Milonga-Regular" family="Milonga" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.26274509800000001" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBr-O3-cDr">
+                                        <rect key="frame" x="81" y="15" width="79" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="cbl-VO-9at"/>
+                                            <constraint firstAttribute="width" constant="79" id="weL-Qa-WDT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Milonga-Regular" family="Milonga" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.26274509800000001" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="6-Digit Pin" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XZk-vC-HnW">
+                                        <rect key="frame" x="8" y="106" width="224" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="j91-td-ojx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXE-9Q-jy2">
+                                        <rect key="frame" x="45" y="186" width="150" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.26274509800000001" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="dAm-Ui-Fj7"/>
+                                            <constraint firstAttribute="width" constant="150" id="smc-UQ-nQJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Milonga-Regular" family="Milonga" pointSize="15"/>
+                                        <state key="normal" title="Register">
+                                            <color key="titleColor" red="0.15686274509803921" green="0.59999999999999998" blue="0.4823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zOW-3y-MVE"/>
+                                        </connections>
+                                    </button>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R9w-vk-Rrd">
+                                        <rect key="frame" x="183" y="147" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="autoLoginChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="3jH-Gm-mce"/>
+                                        </connections>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Automatic Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lnc-24-YRd">
+                                        <rect key="frame" x="8" y="152" width="167" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="167" id="2qd-JZ-GW6"/>
+                                            <constraint firstAttribute="height" constant="21" id="Xya-Rh-naY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Milonga-Regular" family="Milonga" pointSize="17"/>
+                                        <color key="textColor" red="0.0078431372549019607" green="0.17254901960784313" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.19215686274509805" green="0.70196078431372544" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="R9w-vk-Rrd" firstAttribute="leading" secondItem="lnc-24-YRd" secondAttribute="trailing" constant="8" id="0B7-bf-HOT"/>
+                                    <constraint firstItem="KXE-9Q-jy2" firstAttribute="top" secondItem="lnc-24-YRd" secondAttribute="bottom" constant="13" id="0H7-aC-8Bj"/>
+                                    <constraint firstItem="w4K-Rv-eWF" firstAttribute="top" secondItem="OBr-O3-cDr" secondAttribute="bottom" constant="8" id="0wg-tQ-FCd"/>
+                                    <constraint firstItem="FEn-QF-ewx" firstAttribute="top" secondItem="w4K-Rv-eWF" secondAttribute="bottom" constant="8" id="4oJ-FG-owK"/>
+                                    <constraint firstItem="OBr-O3-cDr" firstAttribute="centerX" secondItem="q3e-xO-2Hh" secondAttribute="centerX" id="7IP-YV-HCT"/>
+                                    <constraint firstItem="FEn-QF-ewx" firstAttribute="centerX" secondItem="q3e-xO-2Hh" secondAttribute="centerX" id="7eY-sX-0Ea"/>
+                                    <constraint firstItem="OBr-O3-cDr" firstAttribute="top" secondItem="q3e-xO-2Hh" secondAttribute="top" constant="15" id="EBt-ie-SCU"/>
+                                    <constraint firstAttribute="trailing" secondItem="R9w-vk-Rrd" secondAttribute="trailing" constant="8" id="Q02-7L-VLE"/>
+                                    <constraint firstItem="KXE-9Q-jy2" firstAttribute="centerX" secondItem="q3e-xO-2Hh" secondAttribute="centerX" id="Vta-AM-Mrm"/>
+                                    <constraint firstAttribute="trailing" secondItem="XZk-vC-HnW" secondAttribute="trailing" constant="8" id="b0a-YB-Qfw"/>
+                                    <constraint firstItem="w4K-Rv-eWF" firstAttribute="leading" secondItem="q3e-xO-2Hh" secondAttribute="leading" constant="8" id="dkN-EQ-gZN"/>
+                                    <constraint firstItem="XZk-vC-HnW" firstAttribute="top" secondItem="FEn-QF-ewx" secondAttribute="bottom" constant="3" id="eEG-lo-gz5"/>
+                                    <constraint firstAttribute="height" constant="223" id="gMg-c7-i3O"/>
+                                    <constraint firstItem="XZk-vC-HnW" firstAttribute="leading" secondItem="q3e-xO-2Hh" secondAttribute="leading" constant="8" id="gkk-h1-Ch8"/>
+                                    <constraint firstItem="R9w-vk-Rrd" firstAttribute="top" secondItem="XZk-vC-HnW" secondAttribute="bottom" constant="11" id="kiK-96-jXc"/>
+                                    <constraint firstItem="lnc-24-YRd" firstAttribute="top" secondItem="XZk-vC-HnW" secondAttribute="bottom" constant="16" id="qSp-h5-lIT"/>
+                                    <constraint firstAttribute="trailing" secondItem="w4K-Rv-eWF" secondAttribute="trailing" constant="8" id="sMO-O4-Cla"/>
+                                    <constraint firstAttribute="width" constant="240" id="vBV-LI-eRT"/>
+                                    <constraint firstItem="KXE-9Q-jy2" firstAttribute="top" secondItem="XZk-vC-HnW" secondAttribute="bottom" constant="50" id="wic-B8-cnH"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="wic-B8-cnH"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMH-X8-7AB">
+                                <rect key="frame" x="235" y="432" width="130" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="4Tp-OH-VDs"/>
+                                    <constraint firstAttribute="height" constant="30" id="mfh-ep-BaW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Milonga-Regular" family="Milonga" pointSize="17"/>
+                                <state key="normal" title="Change Picture">
+                                    <color key="titleColor" red="0.15686274509803921" green="0.59999999999999998" blue="0.4823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.26274509800000001" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="q3e-xO-2Hh" firstAttribute="top" secondItem="ZN6-8k-6d3" secondAttribute="bottom" constant="60" id="6RA-aQ-Pai"/>
+                            <constraint firstItem="kMH-X8-7AB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GgP-sU-DxM"/>
+                            <constraint firstItem="ZN6-8k-6d3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="PTQ-jh-p2R"/>
+                            <constraint firstItem="q3e-xO-2Hh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YVP-eU-BO4"/>
+                            <constraint firstItem="kMH-X8-7AB" firstAttribute="top" secondItem="q3e-xO-2Hh" secondAttribute="bottom" constant="20" id="Zpe-Fh-esJ"/>
+                            <constraint firstItem="ZN6-8k-6d3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b6H-ZP-xjb"/>
+                            <constraint firstItem="q3e-xO-2Hh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="u1u-QE-p7q"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="PTQ-jh-p2R"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="AHp-ke-Vtf"/>
+                    <connections>
+                        <outlet property="autoLogin" destination="R9w-vk-Rrd" id="6Uk-WE-ZuC"/>
+                        <outlet property="emailField" destination="w4K-Rv-eWF" id="nO7-XL-dtK"/>
+                        <outlet property="loginButton" destination="KXE-9Q-jy2" id="qM6-7n-S5E"/>
+                        <outlet property="pictureButton" destination="kMH-X8-7AB" id="KIy-47-bg3"/>
+                        <outlet property="pinField" destination="XZk-vC-HnW" id="Xrc-Vs-C2b"/>
+                        <segue destination="28R-2H-hgo" kind="show" identifier="toSoundsVC" id="BAt-he-uRi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="366" y="380"/>
+        </scene>
+        <!--Sounds View Controller-->
+        <scene sceneID="Pgn-y0-sd9">
+            <objects>
+                <viewController id="28R-2H-hgo" customClass="SoundsViewController" customModule="Soothie_Baby" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="noT-AK-hjr"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yal-uM-xol"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nJs-1A-NnT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCV-rw-Fk3">
+                                <rect key="frame" x="20" y="20" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Aux-KI-UNt"/>
+                                    <constraint firstAttribute="height" constant="30" id="ZaV-ke-Zxn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Milonga-Regular" family="Milonga" pointSize="17"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.19215686274509805" green="0.70196078431372544" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="28R-2H-hgo" eventType="touchUpInside" id="6gC-W9-ND6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3p7-Oj-uw9">
+                                <rect key="frame" x="530" y="28" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="kZl-bQ-Dwk"/>
+                                    <constraint firstAttribute="width" constant="50" id="y0a-kr-O7m"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="soundIcon"/>
+                                <connections>
+                                    <action selector="newSoundButtonTapped:" destination="28R-2H-hgo" eventType="touchUpInside" id="2x4-I5-QKB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rw2-Fg-CNW">
+                                <rect key="frame" x="532" y="86" width="46" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="orG-H2-be4"/>
+                                    <constraint firstAttribute="width" constant="46" id="vGv-As-eBF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Milonga-Regular" family="Milonga" pointSize="17"/>
+                                <color key="textColor" red="0.19607843137254902" green="0.70196078431372544" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQC-qk-WRg">
+                                <rect key="frame" x="175" y="318" width="250" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="MXI-1l-NC7"/>
+                                    <constraint firstAttribute="height" constant="100" id="fzn-fb-n96"/>
+                                </constraints>
+                                <state key="normal" title="Shared Sounds" image="share">
+                                    <color key="titleColor" red="0.16078431372549021" green="0.59999999999999998" blue="0.4823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sharedSoundsButtonTapped:" destination="28R-2H-hgo" eventType="touchUpInside" id="afI-sU-PWq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ly-Da-QKa">
+                                <rect key="frame" x="250" y="107" width="100" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="57f-YS-PgB"/>
+                                    <constraint firstAttribute="width" constant="100" id="aEX-9m-FIs"/>
+                                </constraints>
+                                <state key="normal" title="My Sounds" image="mySounds">
+                                    <color key="titleColor" red="0.16078431372549021" green="0.59999999999999998" blue="0.4823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="mySoundsButtonTapped:" destination="28R-2H-hgo" eventType="touchUpInside" id="UJp-EF-BeR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Sounds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vT1-7M-0Pb">
+                                <rect key="frame" x="248" y="226" width="104" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="KUx-3t-pQm"/>
+                                    <constraint firstAttribute="width" constant="104" id="Mp9-S2-5bk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Milonga-Regular" family="Milonga" pointSize="17"/>
+                                <color key="textColor" red="0.19607843137254902" green="0.70196078431372544" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shared Sounds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7O-TI-04Q">
+                                <rect key="frame" x="240" y="426" width="120" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="9FG-9Q-oau"/>
+                                    <constraint firstAttribute="height" constant="21" id="amU-Aw-kkq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Milonga-Regular" family="Milonga" pointSize="17"/>
+                                <color key="textColor" red="0.19607843137254902" green="0.70196078431372544" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.26274509800000001" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="d7O-TI-04Q" firstAttribute="centerX" secondItem="nJs-1A-NnT" secondAttribute="centerX" id="HJX-fG-lkc"/>
+                            <constraint firstItem="3p7-Oj-uw9" firstAttribute="top" secondItem="noT-AK-hjr" secondAttribute="bottom" constant="8" id="IXc-4t-Y1x"/>
+                            <constraint firstItem="rw2-Fg-CNW" firstAttribute="centerX" secondItem="3p7-Oj-uw9" secondAttribute="centerX" id="KGY-SZ-vyV"/>
+                            <constraint firstItem="rw2-Fg-CNW" firstAttribute="top" secondItem="3p7-Oj-uw9" secondAttribute="bottom" constant="8" id="KlM-A1-EBO"/>
+                            <constraint firstItem="vT1-7M-0Pb" firstAttribute="top" secondItem="0ly-Da-QKa" secondAttribute="bottom" constant="18" id="Udp-DA-00g"/>
+                            <constraint firstItem="3p7-Oj-uw9" firstAttribute="trailing" secondItem="nJs-1A-NnT" secondAttribute="trailingMargin" id="Wlu-0O-lGR"/>
+                            <constraint firstItem="bQC-qk-WRg" firstAttribute="centerX" secondItem="nJs-1A-NnT" secondAttribute="centerX" id="Y1g-nl-xOq"/>
+                            <constraint firstItem="bQC-qk-WRg" firstAttribute="top" secondItem="vT1-7M-0Pb" secondAttribute="bottom" constant="71" id="cBV-yF-bfm"/>
+                            <constraint firstItem="JCV-rw-Fk3" firstAttribute="top" secondItem="noT-AK-hjr" secondAttribute="bottom" id="iFi-LK-9cq"/>
+                            <constraint firstItem="0ly-Da-QKa" firstAttribute="top" secondItem="noT-AK-hjr" secondAttribute="bottom" constant="87" id="nC8-6h-dxu"/>
+                            <constraint firstItem="0ly-Da-QKa" firstAttribute="centerX" secondItem="nJs-1A-NnT" secondAttribute="centerX" id="obM-ZX-dL9"/>
+                            <constraint firstItem="d7O-TI-04Q" firstAttribute="top" secondItem="bQC-qk-WRg" secondAttribute="bottom" constant="8" id="u7c-1u-VDw"/>
+                            <constraint firstItem="JCV-rw-Fk3" firstAttribute="leading" secondItem="nJs-1A-NnT" secondAttribute="leadingMargin" id="wqe-7s-jMa"/>
+                            <constraint firstItem="vT1-7M-0Pb" firstAttribute="centerX" secondItem="nJs-1A-NnT" secondAttribute="centerX" id="xGj-C4-H3J"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toMenuVC" id="txf-5I-huB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zuv-Kq-fgz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1167" y="380"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iek-SA-CNN">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="gwX-Rc-FFT" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aab-bo-Uvb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PSQ-wR-XA3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T3K-81-l3O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-143" y="380"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="mySounds" width="2121" height="2765"/>
+        <image name="share" width="5432" height="2765"/>
+        <image name="soundIcon" width="204" height="204"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="txf-5I-huB"/>
+    </inferredMetricsTieBreakers>
 </document>
