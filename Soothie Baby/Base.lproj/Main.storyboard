@@ -3,10 +3,15 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Milonga-Regular.ttf">
+            <string>Milonga-Regular</string>
+            <string>Milonga-Regular</string>
+            <string>Milonga-Regular</string>
+            <string>Milonga-Regular</string>
             <string>Milonga-Regular</string>
             <string>Milonga-Regular</string>
             <string>Milonga-Regular</string>
@@ -147,13 +152,13 @@
                                 </variation>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMH-X8-7AB">
-                                <rect key="frame" x="235" y="432" width="130" height="30"/>
+                                <rect key="frame" x="225" y="432" width="150" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="130" id="4Tp-OH-VDs"/>
+                                    <constraint firstAttribute="width" constant="150" id="4Tp-OH-VDs"/>
                                     <constraint firstAttribute="height" constant="30" id="mfh-ep-BaW"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Milonga-Regular" family="Milonga" pointSize="17"/>
-                                <state key="normal" title="Change Picture">
+                                <state key="normal" title="Set Profile Picture">
                                     <color key="titleColor" red="0.15686274509803921" green="0.59999999999999998" blue="0.4823529411764706" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
@@ -302,11 +307,147 @@
                     </view>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="toMenuVC" id="txf-5I-huB"/>
+                        <segue destination="OZe-4e-Mhy" kind="show" identifier="toNewSound" id="3zd-hg-m9b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zuv-Kq-fgz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1167" y="380"/>
+            <point key="canvasLocation" x="1008" y="380"/>
+        </scene>
+        <!--New Sound View Controller-->
+        <scene sceneID="OP0-PV-ZpX">
+            <objects>
+                <viewController id="OZe-4e-Mhy" customClass="NewSoundViewController" customModule="Soothie_Baby" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h64-rk-L6m"/>
+                        <viewControllerLayoutGuide type="bottom" id="Unb-vt-65b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QMg-88-zDO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wd8-KH-lJO">
+                                <rect key="frame" x="20" y="20" width="48" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="QvT-7C-4bJ"/>
+                                    <constraint firstAttribute="height" constant="35" id="RAT-cn-Lug"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Milonga-Regular" family="Milonga" pointSize="17"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" red="0.14117647058823529" green="0.70588235294117652" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneButtonTapped:" destination="OZe-4e-Mhy" eventType="touchUpInside" id="vmp-Fi-QMp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Audio clips can be up to 20 seconds in length" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJm-zY-plA">
+                                <rect key="frame" x="205" y="59" width="190" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="IIO-3J-sBv"/>
+                                    <constraint firstAttribute="width" constant="190" id="OIL-1m-mX8"/>
+                                    <constraint firstAttribute="width" constant="347" id="hAT-fc-84d"/>
+                                    <constraint firstAttribute="width" secondItem="NJm-zY-plA" secondAttribute="height" multiplier="347:21" id="q4g-uV-fRM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Milonga-Regular" family="Milonga" pointSize="17"/>
+                                <color key="textColor" red="0.14117647058823529" green="0.6588235294117647" blue="0.46274509803921571" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="hAT-fc-84d"/>
+                                        <exclude reference="q4g-uV-fRM"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7Q-jZ-c8M">
+                                <rect key="frame" x="221" y="146" width="158" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="158" id="SuN-g0-4ZB"/>
+                                    <constraint firstAttribute="height" constant="21" id="VxS-w4-E1I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Milonga-Regular" family="Milonga" pointSize="17"/>
+                                <color key="textColor" red="0.12549019607843137" green="0.57647058823529407" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rec1" translatesAutoresizingMaskIntoConstraints="NO" id="3o7-Eh-cSh">
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="NY4-LN-vDX"/>
+                                    <constraint firstAttribute="height" constant="200" id="S6v-YF-NXU"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLg-2d-Mcz">
+                                <rect key="frame" x="165" y="420" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="15c-zy-oZs"/>
+                                    <constraint firstAttribute="width" constant="75" id="dTh-gb-yvw"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="playIcon"/>
+                                <connections>
+                                    <action selector="playButtonTapped:" destination="OZe-4e-Mhy" eventType="touchUpInside" id="KVJ-ZK-V0G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHs-YN-gKb">
+                                <rect key="frame" x="360" y="420" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="eor-Nh-aSl"/>
+                                    <constraint firstAttribute="width" constant="75" id="iMW-Sb-CKT"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="stopIcon"/>
+                                <connections>
+                                    <action selector="stopButtonTapped:" destination="OZe-4e-Mhy" eventType="touchUpInside" id="qrW-yb-xoS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dN-IL-U5d">
+                                <rect key="frame" x="270" y="443" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="76b-Lp-lIx"/>
+                                    <constraint firstAttribute="width" constant="60" id="dp8-CZ-YBA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Milonga-Regular" family="Milonga" pointSize="17"/>
+                                <state key="normal" title="Share">
+                                    <color key="titleColor" red="0.12549019607843137" green="0.57647058823529407" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareButtonTapped:" destination="OZe-4e-Mhy" eventType="touchUpInside" id="K8B-Tr-4WP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.26274509800000001" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="3o7-Eh-cSh" firstAttribute="leading" secondItem="QLg-2d-Mcz" secondAttribute="trailing" constant="-49" id="3hg-EB-xiQ"/>
+                            <constraint firstItem="I7Q-jZ-c8M" firstAttribute="centerX" secondItem="QMg-88-zDO" secondAttribute="centerX" id="4yP-qD-RZd"/>
+                            <constraint firstItem="3o7-Eh-cSh" firstAttribute="centerY" secondItem="QMg-88-zDO" secondAttribute="centerY" id="AH4-Ef-Yqf"/>
+                            <constraint firstItem="MHs-YN-gKb" firstAttribute="leading" secondItem="3dN-IL-U5d" secondAttribute="trailing" constant="30" id="ALD-hc-USh"/>
+                            <constraint firstItem="NJm-zY-plA" firstAttribute="top" secondItem="h64-rk-L6m" secondAttribute="bottom" constant="39" id="TSX-tb-Cms"/>
+                            <constraint firstItem="3dN-IL-U5d" firstAttribute="centerX" secondItem="QMg-88-zDO" secondAttribute="centerX" id="XfH-11-ImS"/>
+                            <constraint firstItem="MHs-YN-gKb" firstAttribute="centerY" secondItem="QLg-2d-Mcz" secondAttribute="centerY" id="Zfi-xF-S3V"/>
+                            <constraint firstItem="wd8-KH-lJO" firstAttribute="leading" secondItem="QMg-88-zDO" secondAttribute="leadingMargin" id="c5c-6j-XFh"/>
+                            <constraint firstItem="3o7-Eh-cSh" firstAttribute="centerX" secondItem="QMg-88-zDO" secondAttribute="centerX" id="kO6-eS-5hu"/>
+                            <constraint firstItem="3o7-Eh-cSh" firstAttribute="top" secondItem="I7Q-jZ-c8M" secondAttribute="bottom" constant="33" id="kaa-6J-12n"/>
+                            <constraint firstItem="NJm-zY-plA" firstAttribute="centerX" secondItem="QMg-88-zDO" secondAttribute="centerX" id="n9t-K4-79y"/>
+                            <constraint firstItem="MHs-YN-gKb" firstAttribute="top" secondItem="3o7-Eh-cSh" secondAttribute="bottom" constant="20" id="nGg-bw-ls8"/>
+                            <constraint firstItem="3dN-IL-U5d" firstAttribute="leading" secondItem="QLg-2d-Mcz" secondAttribute="trailing" constant="30" id="nnI-Ff-mvl"/>
+                            <constraint firstItem="3dN-IL-U5d" firstAttribute="centerY" secondItem="QLg-2d-Mcz" secondAttribute="centerY" id="psD-xM-tvk"/>
+                            <constraint firstItem="wd8-KH-lJO" firstAttribute="top" secondItem="h64-rk-L6m" secondAttribute="bottom" id="wS9-Rq-eWQ"/>
+                            <constraint firstItem="QLg-2d-Mcz" firstAttribute="top" secondItem="3o7-Eh-cSh" secondAttribute="bottom" constant="20" id="yT9-F5-IKA"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3hg-EB-xiQ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="playButton" destination="QLg-2d-Mcz" id="J4A-u2-keN"/>
+                        <outlet property="shareButton" destination="3dN-IL-U5d" id="vOR-S9-Upz"/>
+                        <outlet property="stopButton" destination="MHs-YN-gKb" id="lC8-Yg-CE1"/>
+                        <outlet property="timerLabel" destination="I7Q-jZ-c8M" id="xPD-MM-eba"/>
+                        <segue destination="28R-2H-hgo" kind="show" identifier="toSoundsVC" id="4g0-f6-TKJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FlY-8G-J96" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1008" y="-297"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iek-SA-CNN">
@@ -327,10 +468,14 @@
     </scenes>
     <resources>
         <image name="mySounds" width="2121" height="2765"/>
+        <image name="playIcon" width="204" height="204"/>
+        <image name="rec1" width="512" height="512"/>
         <image name="share" width="5432" height="2765"/>
         <image name="soundIcon" width="204" height="204"/>
+        <image name="stopIcon" width="204" height="204"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="4g0-f6-TKJ"/>
         <segue reference="txf-5I-huB"/>
     </inferredMetricsTieBreakers>
 </document>

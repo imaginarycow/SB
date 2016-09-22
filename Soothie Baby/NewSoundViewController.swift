@@ -11,6 +11,10 @@ import UIKit
 
 class NewSoundViewController: UIViewController {
     
+    @IBOutlet var playButton: UIButton!
+    @IBOutlet var shareButton: UIButton!
+    @IBOutlet var stopButton: UIButton!
+    @IBOutlet var timerLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +24,15 @@ class NewSoundViewController: UIViewController {
         
     }
     
+    @IBAction func playButtonTapped(sender: AnyObject) {
+    }
     
+    @IBAction func stopButtonTapped(sender: AnyObject) {
+    }
+    @IBAction func shareButtonTapped(sender: AnyObject) {
+    }
+    @IBAction func doneButtonTapped(sender: AnyObject) {
+        self.performSegueWithIdentifier(Sound_Segue, sender: self)
+    }
     
 }

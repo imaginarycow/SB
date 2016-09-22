@@ -10,3 +10,6 @@ import Foundation
 
 let Menu_Segue = "toMenuVC"
 let Sound_Segue = "toSoundsVC"
+let newSound_Segue = "toNewSound"
+
+let maxLength = 20 //length of sound clips

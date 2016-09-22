@@ -21,7 +21,7 @@ class SoundsViewController: UIViewController {
     
     @IBAction func newSoundButtonTapped(sender: AnyObject) {
         //go to new sound vc
-        
+        self.performSegueWithIdentifier(newSound_Segue, sender: self)
     }
     
     @IBAction func mySoundsButtonTapped(sender: AnyObject) {
